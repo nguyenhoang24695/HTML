@@ -1,3 +1,4 @@
+var isusername = false;var isemail=false; var ispassword=false; var isconfirmPassword=false; var isfullName=false;
 var usernameElement = document.getElementById("username");
 usernameElement.onkeyup = function(){
 	username();
@@ -26,6 +27,7 @@ function pass(){
 		}else{
 		passMessage.innerHTML="Chuỗi nhập hợp lệ";
 		passMessage.style.color="green";
+		ispassword=true;
 	}
 };
 function email(){
@@ -40,6 +42,7 @@ function email(){
 		}else{
 		emailMessage.innerHTML="Chuỗi nhập hợp lệ";
 		emailMessage.style.color="green";
+		isemail=true;
 	}
 }
 function username() {
@@ -54,6 +57,7 @@ function username() {
 		}else{
 		usermessage.innerHTML="Chuỗi nhập hợp lệ";
 		usermessage.style.color="green";
+		isusername=true;
 	}
 }
 function repass() {
@@ -68,9 +72,10 @@ function repass() {
 	}else if(repass==document.getElementById("password").value){
 		repassMessage.innerHTML="Mật khẩu khớp";
 		repassMessage.style.color="green";
+		isconfirmPassword=true;
 	}else{
 		repassMessage.innerHTML="Mật khẩu không trùng khớp";
-		repassMessage.style.color="red";
+		repassMessage.style.color="red";	
 	}
 }
 var fullnameElement = document.getElementById("fullName");
@@ -86,6 +91,13 @@ function fullname() {
 	}else{
 		fullnameMessage.innerHTML = "Chuỗi hợp lệ";
 		fullnameMessage.style.color = "green";
+		isfullName=true;
 	}
 }
-
+function isValid(){
+	if (isusername==false || isemail==false || ispassword==false || isconfirmPassword==false || isfullName==false) {
+		return false;
+	}else{
+		return true;
+	}
+}	x
