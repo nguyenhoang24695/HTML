@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+<form name="my-form">
+	<fieldset>
+		<legend>Thông tin đăng ký</legend>
+		<div>
+			<label>Tài khoản *	</label>
+			<input class="input-style" type="text" name="userName" value="" placeholder="Tài khoản có ít nhất 8 ký tự"><span id="userName-msg"></span>
+		</div>
+		<div>
+			<label>Mật khẩu *</label>
+			<input class="input-style" type="password" name="passWord" value="" placeholder="Mật khẩu có ít nhất 8 ký tự"><span id="passWord-msg"></span>
+		</div>
+		<div>
+			<label>Nhập lại mật khẩu *</label>
+			<input class="input-style" type="password" name="repassWord" value="" placeholder="Nhập lại mật khẩu"><span id="repassWord-msg"></span>
+		</div>
+		<div>
+			<label>Email *</label>
+			<input class="input-style" type="Email" name="email" value="" placeholder="Ví Dụ abc@xyz.com">
+			<span id="email-msg"></span>
+		</div>
+		<div>
+			<label>Họ Tên</label>
+			<input class="input-style" type="text" name="fullName" value="" placeholder="Tên đầy đủ của bạn">
+		</div>
+		<div>
+			<label>Sinh nhật</label>
+			<input class="input-style" type="number" name="birthDay" value="" placeholder="Gốm tám chữ số, viết liền không dấu. VD:12121989">
+		</div>
+		<div>
+			<label>Giới tính *</label>
+			<select id="gender" onchange="genderChange()">
+				<option  value="2">Khác</option>
+				<option  value="1">Nam</option>
+				<option  value="0">Nữ</option>
+			</select>
+			<span id="gender-msg"></span>
+		</div>
+		<div>
+			<label>Avatar URL</label>
+			<input class="input-style" type="text" name="avatar" value="" placeholder="Nhập đường link tới avatar của bạn">
+		</div>
+		<div>
+			<input class="input-style" type="checkbox" name="check" value=""><label>Đống ý điều khoản sử dụng</label>
+		</div>
+		<div>
+			<input class="input-style" type="button" name="agree" value="Đồng ý">
+			<input class="input-style" type="reset" name="reset" value="Reset">
+		</div>
+		<div>Những mục có dấu * bắt buộc phải nhập</div>
+	</fieldset>
+<script type="text/javascript" src="js/myjs.js"></script>
+</form>
+</body>
+</html>
