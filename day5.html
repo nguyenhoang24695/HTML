@@ -10,19 +10,19 @@
 	<fieldset>
 		<legend>Thông tin đăng ký</legend>
 		<div>
-			<label>Tài khoản *	</label>
+			<label>Tài khoản <sup>*</sup>	</label>
 			<input class="input-style" type="text" name="userName" value="" placeholder="Tài khoản có ít nhất 8 ký tự"><span id="userName-msg"></span>
 		</div>
 		<div>
-			<label>Mật khẩu *</label>
+			<label>Mật khẩu <sup>*</sup></label>
 			<input class="input-style" type="password" name="passWord" value="" placeholder="Mật khẩu có ít nhất 8 ký tự"><span id="passWord-msg"></span>
 		</div>
 		<div>
-			<label>Nhập lại mật khẩu *</label>
+			<label>Nhập lại mật khẩu <sup>*</sup></label>
 			<input class="input-style" type="password" name="repassWord" value="" placeholder="Nhập lại mật khẩu"><span id="repassWord-msg"></span>
 		</div>
 		<div>
-			<label>Email *</label>
+			<label>Email <sup>*</sup></label>
 			<input class="input-style" type="Email" name="email" value="" placeholder="Ví Dụ abc@xyz.com">
 			<span id="email-msg"></span>
 		</div>
@@ -35,8 +35,8 @@
 			<input class="input-style" type="number" name="birthDay" value="" placeholder="Gốm tám chữ số, viết liền không dấu. VD:12121989">
 		</div>
 		<div>
-			<label>Giới tính *</label>
-			<select id="gender" onchange="genderChange()">
+			<label>Giới tính <sup>*</sup></label>
+			<select id="gender" onchange="genderChange()" class="input-style">
 				<option  value="2">Khác</option>
 				<option  value="1">Nam</option>
 				<option  value="0">Nữ</option>
@@ -48,13 +48,14 @@
 			<input class="input-style" type="text" name="avatar" value="" placeholder="Nhập đường link tới avatar của bạn">
 		</div>
 		<div>
-			<input class="input-style" type="checkbox" name="check" value=""><label>Đống ý điều khoản sử dụng</label>
+				<input  class="set-margin" type="checkbox" name="check" value="">
+				<span id="agree-text">Đồng ý điều khoản sử dụng</span>
 		</div>
 		<div>
-			<input class="input-style" type="button" name="agree" value="Đồng ý">
-			<input class="input-style" type="reset" name="reset" value="Reset">
+				<input  class="set-margin" id="register" type="button" name="agree" value="Đăng ký">
+				<input  type="reset" name="reset" value="Reset">
 		</div>
-		<div>Những mục có dấu * bắt buộc phải nhập</div>
+		<div>Những mục có dấu <sup>*</sup> bắt buộc phải nhập</div>
 	</fieldset>
 <script type="text/javascript" src="js/myjs.js"></script>
 </form>

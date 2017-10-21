@@ -1,7 +1,53 @@
-.input-style{
-	border-radius: 3px;
+*{
+	font-family: tahoma;
+}
+label:first-child {
+	width: 200px;
+	float: left;
+	text-align: right;
+	margin-top: 5px;
+	margin-right: 10px;
 }
 label{
-	width: 50px;
-	background-color: 
+	font-weight: bold;
 }
+		
+fieldset {
+	width: 700px;
+	border-radius: 5px;
+	margin: 10px;
+}
+input {
+	border-radius: 5px;
+	height: 30px;
+	margin: 2px;
+}
+.input-style{
+	width: 250px;
+}
+sup {
+	color: #76404E;
+	font-style: normal;
+}
+#gender{
+	border-radius: 5px;
+	height: 30px;
+}
+#register{
+	/*background:url(img/register-icon.png);*/
+	/*background-color: #e0ffff;*/
+	/*background-repeat: no-repeat;*/
+	/*background: scroll;*/
+	/*background-size: 7px 7px;*/
+	/*padding-left: 20px;*/
+}
+
+.set-margin{
+	margin-left: 200px;
+}
+/*.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+*/
