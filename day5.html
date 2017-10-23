@@ -4,54 +4,56 @@
 	<title>Login</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
 <form name="my-form">
 	<fieldset>
 		<legend>Thông tin đăng ký</legend>
 		<div>
-			<label>Tài khoản <sup>*</sup>	</label>
-			<input class="input-style" type="text" name="userName" value="" placeholder="Tài khoản có ít nhất 8 ký tự"><span id="userName-msg"></span>
+			<label class="col-3">Tài khoản <sup>*</sup>	</label>
+			<input class="input-style col-5" type="text" name="userName" value="" placeholder="Tài khoản có ít nhất 8 ký tự"><span id="userName-msg"></span>
 		</div>
 		<div>
-			<label>Mật khẩu <sup>*</sup></label>
-			<input class="input-style" type="password" name="passWord" value="" placeholder="Mật khẩu có ít nhất 8 ký tự"><span id="passWord-msg"></span>
+			<label class="col-3">Mật khẩu <sup>*</sup></label>
+			<input class="input-style col-5" type="password" name="passWord" value="" placeholder="Mật khẩu có ít nhất 8 ký tự"><span id="passWord-msg"></span>
 		</div>
 		<div>
-			<label>Nhập lại mật khẩu <sup>*</sup></label>
-			<input class="input-style" type="password" name="repassWord" value="" placeholder="Nhập lại mật khẩu"><span id="repassWord-msg"></span>
+			<label class="col-3">Nhập lại mật khẩu <sup>*</sup></label>
+			<input class="input-style col-5" type="password" name="repassWord" value="" placeholder="Nhập lại mật khẩu"><span id="repassWord-msg"></span>
 		</div>
 		<div>
-			<label>Email <sup>*</sup></label>
-			<input class="input-style" type="Email" name="email" value="" placeholder="Ví Dụ abc@xyz.com">
+			<label class="col-3">Email <sup>*</sup></label>
+			<input class="input-style col-5" type="Email" name="email" value="" placeholder="Ví Dụ abc@xyz.com">
 			<span id="email-msg"></span>
 		</div>
 		<div>
-			<label>Họ Tên</label>
-			<input class="input-style" type="text" name="fullName" value="" placeholder="Tên đầy đủ của bạn">
+			<label class="col-3">Họ Tên</label>
+			<input class="input-style col-5" type="text" name="fullName" value="" placeholder="Tên đầy đủ của bạn">
 		</div>
 		<div>
-			<label>Sinh nhật</label>
-			<input class="input-style" type="number" name="birthDay" value="" placeholder="Gốm tám chữ số, viết liền không dấu. VD:12121989">
+			<label class="col-3">Sinh nhật</label>
+			<input class="input-style col-5" type="number" name="birthDay" value="" placeholder="Gốm tám chữ số, viết liền không dấu. VD:12121989">
 		</div>
 		<div>
-			<label>Giới tính <sup>*</sup></label>
-			<select id="gender" onchange="genderChange()" class="input-style">
-				<option  value="2">Khác</option>
-				<option  value="1">Nam</option>
-				<option  value="0">Nữ</option>
+			<label class="col-3">Giới tính <sup>*</sup></label>
+			<select id="gender" class="input-style">
+				<option  value= "-1" >Khác</option>
+				<option  value= "1" >Nam</option>
+				<option  value= "0" >Nữ</option>
 			</select>
 			<span id="gender-msg"></span>
 		</div>
 		<div>
-			<label>Avatar URL</label>
-			<input class="input-style" type="text" name="avatar" value="" placeholder="Nhập đường link tới avatar của bạn">
+			<label class="col-3">Avatar URL</label>
+			<input class="input-style col-5" type="text" name="avatar" value="" placeholder="Nhập đường link tới avatar của bạn">
 		</div>
 		<div>
 				<input  class="set-margin" type="checkbox" name="check" value="">
 				<span id="agree-text">Đồng ý điều khoản sử dụng</span>
 		</div>
-		<div>
+		<div	>
 				<input  class="set-margin" id="register" type="button" name="agree" value="Đăng ký">
 				<input  type="reset" name="reset" value="Reset">
 		</div>
