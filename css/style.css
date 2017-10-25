@@ -1,0 +1,233 @@
+* {
+	font-family: "Tahoma";
+	box-sizing: border-box;
+}
+
+footer {
+    height: 50px;
+    text-align: center;
+}
+
+header {
+    padding: 15px;
+}
+
+header .logo img {
+    float: left;
+    /*width: 30%;*/
+    width: 100px;
+}
+
+header .search-box {
+    padding: 25px 0px;
+    float: left;
+    width: 90%;
+}
+
+header::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.form-group {	
+	margin: 10px 5px;
+}
+
+.form-group label:first-child {
+	width: 15%;
+	float: left;
+}
+
+.form-group label {	
+	float: left;
+}
+
+.form-group .form-control {	
+	float: left;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.form-group::after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+.long-input {
+	width: 40%;
+}
+
+.normal-input {
+	width: 30%;
+}
+
+.short-input {
+	width: 20%;
+}
+
+.error-msg {
+	color: red;
+}
+
+.success-msg {
+	color: green;
+}
+
+#list-video {
+    padding: 10px;
+}
+
+#list-video::after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+.video {
+	/*width: 30%;*/
+	float: left;
+	padding: 0px 15px;
+    text-align: center;
+}
+
+.video img {    
+	border-radius: 5px;
+    box-shadow: 3px 3px 10px #888888;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+.video img:hover {
+    opacity: 0.7;
+}
+
+.video .title {
+    font-weight: bold;
+    margin-top: 10px;
+    height: 47px;
+    overflow: auto;
+	text-align: center;
+    cursor: pointer;
+}
+
+.search-box {
+    margin: 15px;  
+}
+
+.search-box input {    
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    /* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (min-width: 768px){
+    .modal-content {
+        width: 100%;
+    }
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .search-box {
+        margin: 15px;  
+    }
+    .search-box input {    
+         width: 50%;
+         height: 30px;
+         border-radius: 5px;
+    }
+    header .search-box{
+        width: 70%;
+    }
+}
+
